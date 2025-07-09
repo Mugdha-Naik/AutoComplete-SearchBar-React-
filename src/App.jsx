@@ -44,7 +44,7 @@ function App() {
           <div>
             <input
               type="text"
-              className='p-[5px] w-[500px] border border-gray-600 rounded-2xl'
+              className='p-[5px] w-[500px] border border-gray-400 rounded-2xl'
               value={input}
               placeholder='Enter any search'
               onChange={(e) => setInput(e.target.value)}
@@ -52,7 +52,7 @@ function App() {
               onBlur={() => setShowResult(false)}
             />
             {showResult && (
-              <div className='w-[500px] m-auto overflow-y-scroll max-h-[454px] flex flex-col border-gray-600 rounded-2xl border-[2px] p-[5px] text-left '>
+              <div className='w-[500px] m-auto overflow-y-scroll max-h-[454px] flex flex-col border-gray-400 rounded-2xl border-[2px] p-[5px] text-left '>
                 {results.map((r) => (
                   <span className='cursor-pointer hover:bg-gray-100 display-block p-[4px]' key={r.id}>{r.name}</span>
                 ))}
